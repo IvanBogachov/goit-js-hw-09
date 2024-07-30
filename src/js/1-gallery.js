@@ -67,7 +67,7 @@ const images = [
   },
 ];
 
-const createGalleryCard = images => {
+const createGalleryCard = ({preview, original, description}) => {
   return `
     <li class="gallery-item">
       <a class="gallery-link" href="${images.original}">
