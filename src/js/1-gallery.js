@@ -70,11 +70,11 @@ const images = [
 const createGalleryCard = ({preview, original, description}) => {
   return `
     <li class="gallery-item">
-      <a class="gallery-link" href="${images.original}">
+      <a class="gallery-link" href="${original}">
         <img
           class="gallery-image"
-          src="${images.preview}"
-          alt="${images.description}"
+          src="${preview}"
+          alt="${description}"
         />
       </a>
     </li>
