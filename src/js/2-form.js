@@ -8,7 +8,7 @@ const fillFormFields = () => {
   const formDataFromLS = JSON.parse(localStorage.getItem(`feedback-form-state`));//зчитуємо дані з localStorage під ключем feedback-form-state
   // console.log(formDataFromLS);
 
-  if (fillFormFields === null) {
+  if (formDataFromLS === null) {
     return;
   }// перевірка, якщо немає данніх в localStorage
 
